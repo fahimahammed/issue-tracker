@@ -41,7 +41,7 @@ const totalOpenIssue = () => {
   document.getElementById("total-open-issue").innerHTML=openIsssue;
 }
 
-// totalOpenIssue();
+totalOpenIssue();
 
 const setStatusClosed = (event ,id) => {
   event.preventDefault();
