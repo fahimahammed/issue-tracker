@@ -23,11 +23,11 @@ function submitIssue(e) {
   e.preventDefault();
 }
 
-const totalIssue = () => {
-    const issues = JSON.parse(localStorage.getItem('issues')) || [];
-    document.getElementById("total-issue").innerHTML=issues.length;
-}
-totalIssue();
+// const totalIssue = () => {
+//     const issues = JSON.parse(localStorage.getItem('issues')) || [];
+//     document.getElementById("total-issue").innerHTML=issues.length;
+// }
+// totalIssue();
 
 const totalOpenIssue = () => {
   let openIsssue = 0;
