@@ -23,23 +23,23 @@ function submitIssue(e) {
   e.preventDefault();
 }
 
-// const totalIssue = () => {
-//     const issues = JSON.parse(localStorage.getItem('issues')) || [];
-//     document.getElementById("total-issue").innerHTML=issues.length;
-// }
-// totalIssue();
-
-const totalOpenIssue = () => {
-  let openIsssue = 0;
-  const issues = JSON.parse(localStorage.getItem('issues')) || [];
-  issues.forEach(element => {
-    if(element.status === "Open") {
-      openIsssue +=1
-    }
-    
-  });
-  document.getElementById("total-open-issue").innerHTML=openIsssue;
+const totalIssue = () => {
+    const issues = JSON.parse(localStorage.getItem('issues')) || [];
+    document.getElementById("total-issue").innerHTML=issues.length;
 }
+totalIssue();
+
+// const totalOpenIssue = () => {
+//   let openIsssue = 0;
+//   const issues = JSON.parse(localStorage.getItem('issues')) || [];
+//   issues.forEach(element => {
+//     if(element.status === "Open") {
+//       openIsssue +=1
+//     }
+    
+//   });
+//   document.getElementById("total-open-issue").innerHTML=openIsssue;
+// }
 
 totalOpenIssue();
 
