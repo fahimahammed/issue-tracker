@@ -29,17 +29,17 @@ const totalIssue = () => {
 }
 totalIssue();
 
-// const totalOpenIssue = () => {
-//   let openIsssue = 0;
-//   const issues = JSON.parse(localStorage.getItem('issues')) || [];
-//   issues.forEach(element => {
-//     if(element.status === "Open") {
-//       openIsssue +=1
-//     }
+const totalOpenIssue = () => {
+  let openIsssue = 0;
+  const issues = JSON.parse(localStorage.getItem('issues')) || [];
+  issues.forEach(element => {
+    if(element.status === "Open") {
+      openIsssue +=1
+    }
     
-//   });
-//   document.getElementById("total-open-issue").innerHTML=openIsssue;
-// }
+  });
+  document.getElementById("total-open-issue").innerHTML=openIsssue;
+}
 
 totalOpenIssue();
 
